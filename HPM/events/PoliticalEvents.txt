@@ -8536,7 +8536,7 @@ country_event = {
 
     id = 1952
     title = "Make no distinctions."
-    desc = "The people of the British Isles would like to believe that they are so diverse, but we will not grant them that privelege. Call them all 'English' and let them slit each others throats."
+    desc = "The people of the British Isles would like to believe that they are so diverse, but we will not grant them that privelege. Call them all 'English' and let them slit each others throats. (British)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8591,7 +8591,7 @@ country_event = {
 country_event = {
 
     id = 1956
-    title = "Teigh ar a bhfeirmeacha agus a gcuid pratai a dho!"
+    title = "Teigh ar a bhfeirmeacha agus a gcuid pratai a dho! (Irish)"
     desc = "The Irish will be stripped of all of their potatoes, and a blockade put in place. Captured Irish rabble rousers will be 'stoned' by a thousand of their confiscated potatoes"
     picture = "concentration_camp"
 
@@ -8662,10 +8662,475 @@ country_event = {
 		country_event = 1951
 		}
 	option = {
-		name = "I think I've changed my mind" #You change your mind
+		name = "The Italians!" #Italian Culture Group
+		random_owned = { limit = { owner = { NOT = { has_country_flag = animists_run } } } owner = { set_country_flag = animists_run } }
+		country_event = 1958
+		}
+	option = {
+		name = "The Iberians!" #Iberian Culture Group
+		random_owned = { limit = { owner = { NOT = { has_country_flag = animists_run } } } owner = { set_country_flag = animists_run } }
+		country_event = 1971
 		}
 	option = {
 		name = "Last page" #Last Page
 		country_event = 1899
 		}
 	}
+
+#Genocide - Italian Culture Group
+country_event = {
+	id = 1958
+	title = "Italian Genocide"
+	desc = "There are a people within our glorious empire that are undoing everything that we have strived to achieve over the centuries, perhaps we should do something about it?"
+	picture = "concentration_camp"
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = everywhere_genocide_only
+	}
+
+	option = {
+		name = "I disgustosi freaks che mangiano maggots (North Italian)" #North Italian
+		country_event = 1962
+		}
+	option = {
+		name = "Rimuovi quei meridionali non istruiti dal volto del nostro pianeta! (South Italian)" #South Italian
+		country_event = 1966
+		}
+	option = {
+		name = "Gli abitanti dell'isola devono andare! (Maltese)" #Maltese
+		country_event = 1970
+		}
+	option = {
+		name = "I've changed my mind" #You change your mind
+		country_event = 1899
+		}
+	}
+
+#North Italian
+country_event = {
+
+    id = 1962
+    title = "Gettarli nei militari, moriranno tutti di inabilitazione in un tempo di una settimana."
+    desc = "The Italians will be conscripted, where they will struggle to survive any longer than a week before they die of ineptitude. (North Italian)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = north_italian }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1958
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#South Italian
+country_event = {
+
+    id = 1966
+    title = "Basta lasciarli, lo scopriranno da soli."
+    desc = "Leave them to their own devices, I'm sure they'll figure it out on their own. (South Italian)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = south_italian }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1958
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#Maltese
+country_event = {
+
+    id = 1970
+    title = "Rimuovi il maltese per la colonizzazione"
+    desc = "The Maltese are set to be removed from the island so that we may claim it as our own. (Maltese)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = maltese }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1958
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#Genocide - Iberian Culture Group
+country_event = {
+	id = 1971
+	title = "Iberian Genocide"
+	desc = "There are a people within our glorious empire that are undoing everything that we have strived to achieve over the centuries, perhaps we should do something about it?"
+	picture = "concentration_camp"
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = everywhere_genocide_only
+	}
+
+	option = {
+		name = "Kultur nortasuna ez da garrantzirik, kendu. (Basque)" #Basque
+		country_event = 1975
+		}
+	option = {
+		name = "Los opresores violentos no mas. (Spanish)" #Spanish
+		country_event = 1979
+		}
+	option = {
+		name = "Ara mai no tindran la seva independencia. (Catalan)" #Catalan
+		country_event = 1983
+		}
+	option = {
+		name = "Incrivel, eles ainda nao foram anexados. (Portugese)" #Portugese
+		country_event = 1987
+		}
+	option = {
+		name = "I've changed my mind" #You change your mind
+		country_event = 1899
+		}
+	}
+	
+#Basque
+country_event = {
+
+    id = 1975
+    title = "Azken euskaldunak"
+    desc = "The odd buffer culture will be removed so that the land can rightly be ours. (Basque)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = basque }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1971
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#Spanish
+country_event = {
+
+    id = 1979
+    title = "La inquisicion espanola"
+    desc = "Who could have seen it coming?! (Spanish)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = spanish }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1971
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#Catalan
+country_event = {
+
+    id = 1983
+    title = "Ara no?, ni mai."
+    desc = "We deny the Catalan's stateship; more than that, we deny them life. Send in the military police. (Catalan)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = catalan }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1971
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
+
+#Portugese
+country_event = {
+
+    id = 1987
+    title = "Chegou a hora de morrer os, senhores coloniais."
+    desc = "The time has come for the colonial overlords of millions to die; they will not be missed. (Portugese)"
+    picture = "concentration_camp"
+
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+    }
+
+    option = {
+        name = "Give them what they deserve!" #Genocide
+        random_owned = { limit = { owner = { NOT = { has_country_flag = preparations_to_kill } } } owner = { badboy = 4 } }
+        clr_country_flag = preparations_to_kill
+        any_owned = {
+            limit = { has_national_minority = yes }
+            add_province_modifier = { name = genocide duration = 1825 }
+        }
+        any_pop = {
+            limit = { culture = portugese }
+            militancy = 9
+            consciousness = 7
+            random_list = {
+                25 = { reduce_pop = 0.7 }
+                25 = { reduce_pop = 0.6 }
+                25 = { reduce_pop = 0.5 }
+                25 = { reduce_pop = 0.4 }
+            }
+        }
+        any_pop = {
+            scaled_militancy = { ideology = socialist factor = 6 }
+            scaled_militancy = { ideology = liberal factor = 6 }
+            scaled_militancy = { ideology = anarcho_liberal factor = 7 }
+            scaled_militancy = { ideology = fascist factor = -7 }
+            scaled_militancy = { ideology = reactionary factor = -2 }
+        }
+        any_country = {
+            limit = { NOT = { relation = { who = THIS value = 0 } } }
+            casus_belli = { target = THIS type = humiliate months = 24 }
+        }
+    }
+	option = {
+		name = "I had something else in mind." #Changed your mind
+		country_event = 1971
+	}
+	option = {
+		name = "This is a little much, don't you think?" #Changed your mind
+	}
+}
