@@ -8664,4 +8664,7 @@ country_event = {
 	option = {
 		name = "I think I've changed my mind" #You change your mind
 		}
+	option = {
+		name = "Last page" #Last Page
+		}
 	}
