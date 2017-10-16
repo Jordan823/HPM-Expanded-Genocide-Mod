@@ -8666,5 +8666,6 @@ country_event = {
 		}
 	option = {
 		name = "Last page" #Last Page
+		country_event = 1899
 		}
 	}
