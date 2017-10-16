@@ -7676,7 +7676,7 @@ country_event = {
 
     id = 1901
     title = "Gas Die Nord-Deutsche!"
-    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all!"
+    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all! (North German)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -7732,7 +7732,7 @@ country_event = {
 
     id = 1905
     title = "Gas Die Sud-Deutsche!"
-    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all!"
+    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all! (South German)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -7788,7 +7788,7 @@ country_event = {
 
     id = 1909
     title = "Gas Die Juden!"
-    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all!"
+    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all! (Ashkenazi)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -7844,7 +7844,7 @@ country_event = {
 
     id = 1913
     title = "Gas Die Schweizer!"
-    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all!"
+    desc = "We must purify our lands of these subhuman, inbred freaks! We will gas them all! (Swiss)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -7933,7 +7933,7 @@ country_event = {
 
     id = 1915
     title = "Een slag voor die van de Lage"
-    desc = "We will give a blow to the Dutch that will be remembered for centuries."
+    desc = "We will give a blow to the Dutch that will be remembered for centuries. (Dutch)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -7989,7 +7989,7 @@ country_event = {
 
     id = 1919
     title = "Een slag voor die van de Lage"
-    desc = "The false Dutch must be wiped from God's green Earth!"
+    desc = "The false Dutch must be wiped from God's green Earth! (Flemish)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8045,7 +8045,7 @@ country_event = {
 
     id = 1923
     title = "Un coup a ceux des Pays-Bas"
-    desc = "This mixing pot of a culture has only led to deformity and retardation, it's up to us to fix it."
+    desc = "This mixing pot of a culture has only led to deformity and retardation, it's up to us to fix it. (Wallonian)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8172,7 +8172,7 @@ country_event = {
 
     id = 1925
     title = "Vand svenska till kottbullar"
-    desc = "The Swedish will be ground up and turned into meatballs."
+    desc = "The Swedish will be ground up and turned into meatballs. (Swedish)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8228,7 +8228,7 @@ country_event = {
 
     id = 1929
     title = "Zeus slar dig!"
-    desc = "Copious amounts of Danes are to be smitten by electric chair."
+    desc = "Copious amounts of Danes are to be smitten by electric chair. (Danish)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8284,7 +8284,7 @@ country_event = {
 
     id = 1933
     title = "Tor Notteknekkeren"
-    desc = "All Norwegian males are to be bled out by having their testicles smashed by a replica of Thor's hammer."
+    desc = "All Norwegian males are to be bled out by having their testicles smashed by a replica of Thor's hammer. (Norwegian)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8340,7 +8340,7 @@ country_event = {
 
     id = 1942
     title = "Pakotettu sosiaalistaminen"
-    desc = "To kill a Finnish person, you must simply talk to them until they die from socialization overdose."
+    desc = "To kill a Finnish person, you must simply talk to them until they die from socialization overdose. (Finnish)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8396,7 +8396,7 @@ country_event = {
 
     id = 1946
     title = "Teemme heille, kuten Amerikan alkuperaiskansat"
-    desc = "The Sami are destined to death by forced expulsion and gun-toting cowboy."
+    desc = "The Sami are destined to death by forced expulsion and gun-toting cowboy. (Sami)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
@@ -8452,7 +8452,7 @@ country_event = {
 
     id = 1950
     title = "Islenskar isskalar"
-    desc = "The Icelandic people will be removed from Iceland by mass execution boats disguised as fishing boats, also good use of cinder block."
+    desc = "The Icelandic people will be removed from Iceland by mass execution boats disguised as fishing boats, also good use of cinder block. (Icelandic)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
