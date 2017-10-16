@@ -35,4 +35,4 @@
 			}
 		}
     
-    # Everything is subject to change, and suggestions are very welcome. I'm just using the default HPM pre-requisites as it's much easier while I continue to create the meat of the mod, and I will come back to the pre-requisites once all cultures have been added. This mod will 100% work with both Vanilla and HPM by the end of it all.
+# Everything is subject to change, and suggestions are very welcome. I'm just using the default HPM pre-requisites as it's much easier while I continue to create the meat of the mod, and I will come back to the pre-requisites once all cultures have been added. This mod will 100% work with both Vanilla and HPM by the end of it all.
