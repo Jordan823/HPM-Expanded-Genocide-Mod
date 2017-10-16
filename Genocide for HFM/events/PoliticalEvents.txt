@@ -7423,17 +7423,17 @@ country_event = {
 	}
 	
 	option = {
-		name = "Nobody likes the Dutch." #Dutch
+		name = "Nobody likes the Dutch. (Dutch)" #Dutch
 		country_event = 1915
 		}
 
 	option = {
-		name = "To-may-toe, to-mah-toe, same thing as the Dutch." #Flemish
+		name = "To-may-toe, to-mah-toe, same thing as the Dutch. (Flemish)" #Flemish
 		country_event = 1919
 		}
 
 	option = {
-		name = "What even are they anyways?" #Wallonian
+		name = "What even are they anyways? (Wallonian)" #Wallonian
 		country_event = 1923
 		}
 	option = {
@@ -8041,7 +8041,7 @@ country_event = {
 		}
 	option = {
 		name = "I've changed my mind" #You change your mind
-		country_event = 1899
+		country_event = 1957
 		}
 	}
 	
@@ -8218,7 +8218,7 @@ country_event = {
 		}
 	option = {
 		name = "I've changed my mind" #You change your mind
-		country_event = 1899
+		country_event = 1957
 		}
 	}
 
@@ -8421,7 +8421,7 @@ country_event = {
 		}
 	option = {
 		name = "I've changed my mind" #You change your mind
-		country_event = 1899
+		country_event = 1957
 		}
 	}
 	
