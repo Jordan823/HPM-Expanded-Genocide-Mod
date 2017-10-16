@@ -4,7 +4,7 @@
 
 # It uses the same triggers as the default HPM genocide event, and will be available to trigger once those pre-requisites have been met:
 
-potential = {
+	potential = {
 			NOT = { has_country_flag = preparations_to_kill }
 			OR = {
 				government = absolute_monarchy
