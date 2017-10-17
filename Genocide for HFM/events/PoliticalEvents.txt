@@ -8831,7 +8831,7 @@ country_event = {
 
     id = 1993
     title = "Si j'avance, suivez-moi ; si je meurs, vengez-moi ; si je recule, tuez-moi."
-    desc = "The French have become a bunch of domesticated pussies since 1815, and they've gone back. (French)"
+    desc = "The French have become a bunch of domesticated pussies since 1815, and you can bet they've gone back. (French)"
     picture = "concentration_camp"
 
     is_triggered_only = yes
