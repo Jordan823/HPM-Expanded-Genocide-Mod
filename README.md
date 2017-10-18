@@ -1,6 +1,6 @@
 # HPM-Expanded-Genocide-Mod
 
-# This mod isn't finished yet and so far only supports the genocide of North Germans, South Germans, Ashkenazi, Swiss, Swedish, Danish, Norwegian, Finnish, Sami, Icelandic, British, Irish, Basque, Spanish, Catalonian, Portugese, Galician, North Italian, South Italian, Maltese, French, Occitan, Breton, Arpitan, and Picard.
+# This mod isn't finished yet and so far only supports the genocide of North Germans, South Germans, Ashkenazi, Swiss, Swedish, Danish, Norwegian, Finnish, Sami, Icelandic, British, Irish, Basque, Spanish, Catalonian, Portugese, Galician, North Italian, South Italian, Maltese, French, Occitan, Breton, Arpitan, Picard, and the entirety of the Americas.
 
 # It uses the same triggers as the default HPM genocide event, and will be available to trigger once those pre-requisites have been met:
 
